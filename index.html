@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="InAmigos Foundation — NGO Website Feature Proposal, Internship Task 4." />
+  <title>InAmigos Foundation | Website Feature Proposal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="InAmigos Foundation home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M31 57C31 42 28 27 16 14" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M29 39C18 37 10 31 8 21c10 0 19 5 21 15Z" fill="currentColor"/><path d="M31 29C30 17 36 8 48 4c2 11-4 21-17 25Z" fill="currentColor"/><path d="M32 47c7-9 16-12 26-9-5 10-14 14-26 12Z" fill="currentColor"/></svg>
+      </span>
+      <span><strong>InAmigos</strong><small>Foundation</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#impact">Impact</a>
+      <a href="#campaigns">Campaigns</a>
+      <a href="#involve">Get Involved</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-donate" href="#donate">♥ Donate Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <div class="proposal-tag">Website Feature Proposal <span>•</span> Internship Task 4</div>
+        <p class="eyebrow">INAMIGOS FOUNDATION</p>
+        <h1>Essential Features<br />for an NGO Website</h1>
+        <h2>Design Concept for InAmigos Foundation</h2>
+        <p class="hero-text">Creating a digital experience that makes it easier to support, participate in initiatives and understand the impact created by collective action.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#donate">Support the Mission <span>→</span></a>
+          <a class="btn ghost" href="#campaigns">Explore Initiatives</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero.jpg" alt="Community and environmental action" />
+        <div class="hero-badge"><strong>6</strong><span>core causes</span></div>
+      </div>
+    </section>
+
+    <section class="feature-grid" id="involve">
+      <article class="feature-card">
+        <div class="icon-circle">♥</div>
+        <div class="feature-body">
+          <span class="feature-number">01</span>
+          <h3>Donate &amp; Support</h3>
+          <p>Make it easy for visitors to contribute through a clear, secure and transparent donation experience.</p>
+          <a class="btn primary small" href="#donate">Donate Now <span>→</span></a>
+          <div class="micro-points"><span>🔒 Secure</span><span>▣ Simple</span><span>✓ Transparent</span></div>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon-circle">♣</div>
+        <div class="feature-body">
+          <span class="feature-number">02</span>
+          <h3>Volunteer With Us</h3>
+          <p>Enable visitors to register easily and choose how they want to participate in the foundation's initiatives.</p>
+          <button class="btn primary small" data-open="volunteerModal">Become a Volunteer <span>→</span></button>
+          <div class="micro-points"><span>Education</span><span>Environment</span><span>Community</span><span>Health</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="impact section" id="impact">
+      <div class="section-heading">
+        <span class="section-icon">✦</span>
+        <div><p class="eyebrow">MEASURABLE CHANGE</p><h2>03. Our Impact</h2></div>
+        <p>Real figures from InAmigos Foundation's public website and published initiatives.</p>
+      </div>
+      <div class="stats">
+        <div class="stat-card"><span class="stat-icon">👥</span><strong data-count="50000">50,000+</strong><span>Beneficiaries</span><small>people reached</small></div>
+        <div class="stat-card"><span class="stat-icon">🤝</span><strong data-count="200">200+</strong><span>Volunteers</span><small>supporting the mission</small></div>
+        <div class="stat-card"><span class="stat-icon">🌱</span><strong data-count="20000">20,000+</strong><span>Saplings Planted</span><small>through Prakriti</small></div>
+        <div class="stat-card"><span class="stat-icon">🇮🇳</span><strong data-count="28">28</strong><span>States</span><small>across India</small></div>
+      </div>
+      <p class="source-note">Impact figures are presented as a website feature concept; figures are based on information published by InAmigos Foundation.</p>
+    </section>
+
+    <!-- === CAMPAIGNS SECTION RESTORED EXACTLY AS BEFORE === -->
+    <section class="section campaigns" id="campaigns">
+      <div class="section-heading campaigns-heading">
+        <div class="heading-main"><span class="section-icon">📣</span><div><p class="eyebrow">FEATURED INITIATIVES</p><h2>04. Campaigns &amp; Initiatives</h2></div></div>
+        <p>Explore the six key initiatives of InAmigos Foundation and discover how visitors can learn more or get involved.</p>
+      </div>
+      <div class="campaign-grid">
+        <article class="campaign-card">
+          <div class="campaign-image"><img src="assets/BachpanShala.jpg" alt="Children learning together" /></div>
+          <div class="campaign-content"><h3>BachpanShala</h3><p>Quality education and school support for underprivileged children.</p><button class="text-btn" data-campaign="BachpanShala">Learn More →</button></div>
+        </article>
+        <article class="campaign-card">
+          <div class="campaign-image"><img src="assets/prakriti.jpg" alt="Volunteers planting trees" /></div>
+          <div class="campaign-content"><h3>Prakriti</h3><p>Environmental conservation, tree planting and eco-friendly agriculture.</p><button class="text-btn" data-campaign="Prakriti">Learn More →</button></div>
+        </article>
+        <article class="campaign-card">
+          <div class="campaign-image"><img src="assets/Udaan.jpeg" alt="Women and community empowerment" /></div>
+          <div class="campaign-content"><h3>Udaan</h3><p>Women empowerment through skills, awareness and financial independence.</p><button class="text-btn" data-campaign="Udaan">Learn More →</button></div>
+        </article>
+        <article class="campaign-card">
+          <div class="campaign-image"><img src="assets/seva.jpeg" alt="Food and clothing support" /></div>
+          <div class="campaign-content"><h3>Seva</h3><p>Providing food and clothing to people facing hardship and need.</p><button class="text-btn" data-campaign="Seva">Learn More →</button></div>
+        </article>
+        <article class="campaign-card">
+          <div class="campaign-image"><img src="assets/jeev.jpg" alt="Animal welfare" /></div>
+          <div class="campaign-content"><h3>Jeev</h3><p>Animal welfare through feeding, protection, care and support.</p><button class="text-btn" data-campaign="Jeev">Learn More →</button></div>
+        </article>
+        <article class="campaign-card">
+          <div class="campaign-image"><img src="assets/Vikas.jpg" alt="Skill development and internships" /></div>
+          <div class="campaign-content"><h3>Vikas</h3><p>Skill development and employability through internships and career opportunities.</p><button class="text-btn" data-campaign="Vikas">Learn More →</button></div>
+        </article>
+      </div>
+      <p class="initiative-note">All six initiatives shown above are based on the current initiatives described on the InAmigos Foundation website.</p>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-heading">
+        <span class="section-icon">💬</span>
+        <div><p class="eyebrow">TRUST &amp; CONNECTION</p><h2>05. Testimonials &amp; Stories</h2></div>
+        <p>Give beneficiaries and volunteers a human voice and help build credibility.</p>
+      </div>
+      <div class="testimonial-grid">
+        <article class="quote-card"><span class="quote">“</span><p>“This support helped our children continue learning with confidence.”</p><div><strong>Sample Beneficiary</strong><small>Design concept placeholder</small></div></article>
+        <article class="quote-card"><span class="quote">“</span><p>“Volunteering with InAmigos has given me purpose and a chance to give back.”</p><div><strong>Sample Volunteer</strong><small>Design concept placeholder</small></div></article>
+        <article class="quote-card"><span class="quote">“</span><p>“Together we can create stronger communities and a better future.”</p><div><strong>Sample Community Member</strong><small>Design concept placeholder</small></div></article>
+      </div>
+      <p class="sample-note">* Testimonials above are sample content used only to demonstrate the proposed website feature.</p>
+    </section>
+
+    <section class="objective">
+      <div class="objective-icon">◎</div>
+      <div><p class="eyebrow">DESIGN OBJECTIVE</p><h2>Make impact easy to understand — and easy to join.</h2><p>A user-friendly NGO website should help visitors understand the mission, see measurable impact, contribute, volunteer and connect with meaningful initiatives.</p></div>
+    </section>
+
+    <!-- DONATION PANEL (only wording changed) -->
+    <section class="donate-panel" id="donate">
+      <div><p class="eyebrow">READY TO TAKE ACTION?</p><h2>Every contribution can become part of a bigger change.</h2><p>Use the official InAmigos donation route for real contributions.</p></div>
+      <div class="action-stack">
+        <a class="btn light" href="https://www.inamigosfoundation.org.in/" target="_blank" rel="noopener">Visit InAmigos Website ↗</a>
+        <button class="btn outline-light" data-open="volunteerModal">Join as Volunteer</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ... (modal, toast, footer unchanged) ... -->
+</body>
+</html>
